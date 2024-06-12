@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1b1b1f;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+#main-layout{
+    width: 100%;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.asideL{
+    grid-column: 1/2;
+}
+.asideR{
+    grid-column: 4/5;
+}
+.asideL, .asideR{
+    /* background-color: red;    */
+}
+.img{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+
+}
+.img, .logo{
+    width: 100%;
+    min-width: 200px;
+}
+.content{
+    grid-column: 2/3;
+    padding-top: 5%;
+}
+.rows{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-weight: 700;
+    font-size: 56px;
+    color: #4040e1;
+}
+.text{
+    font-weight: 700;
+    font-size: 56px;
+    color: white
+}
+.tagline{
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(235, 235, 245, .6);
+    line-height: 36px;
+
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+    gap: .5rem;
+
+}
+.boton .button-element{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.active{
+    background-color: #646cff;   
+}
+.no-active{
+    background-color:#32363f;
+}
+
+.middle-page{
+    grid-column: 2/4;
+
+}
+
+
+.mid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.tarjeta{
+    width:100%;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 30/10;
+    background-color:#202127;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: .5rem;
+}
+
+.tarjeta .icon{
+    padding: .6rem;
+    background-color: rgba(101, 117, 133, .16);
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+
+}
+
+.tarjeta .tarjeta-title{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.tarjeta .tarjeta-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(235, 235, 245, .6);
+    line-height: 24px;
+    background-color: transparent;
+}
